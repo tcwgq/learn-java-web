@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.objectFactory" value="spring" />
+	<package name="basePackage" extends="struts-default" namespace="/">
+		<!-- class属性不要写类的全路径了，否则action会创建2遍 -->
+		<action name="userAction" class="userAction"></action>
+	</package>
+	<!-- <include file="" /> -->
+</struts>
