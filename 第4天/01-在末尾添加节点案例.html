@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+   <ul id="ulid">
+       <li>111</li>
+	   <li>222</li>
+	   <li>333</li>
+	   <li>444</li>
+   </ul><br/>
+   <input type="button" value="添加" onclick="add1();"/>
+ </body>
+ <script type="text/javascript">
+    function add1(){
+		var ul1 = document.getElementById("ulid");
+		var li1 = document.createElement("li");
+		var text1 = document.createTextNode("555");
+		li1.appendChild(text1);
+		ul1.appendChild(li1);
+	}
+ </script>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <style type="text/css">
+    div{
+	   width:300px;
+	   height:300px;
+	   border: 1px solid red;
+	}
+  </style>
+  <title>Document</title>
+ </head>
+ <body>
+  <span id="sid">我很爱Java！</span><br/>
+  <div id="div">
+  </div>
+ </body>
+ <script type="text/javascript">
+    var span = document.getElementById("sid");
+	document.write(span.innerHTML);
+	var div = document.getElementById("div");
+	div.innerHTML = "<h1>今天天气很好！</h1>";
+	var = "<table border='1'><tr><td>aaa</td></tr><tr><td>bbb</td></tr></table>";
+ </script>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title> new document </title>
+  <meta name="generator" content="editplus" />
+  <meta name="author" content="" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+ </head>
+
+ <body>
+	<!--使用表单标签实现注册界面-->
+	<form action="01-hello.html" method="get">
+		<table border="1">
+			<caption>注册账号</caption>
+			<tr>
+				<td align="right">注册邮箱：</td>
+				<td><input type="text" name="email"/></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td>你可以使用<a href="#">账号</a>注册或使用<a href="#">手机号</a>进行注册</td>
+			</tr>
+			<tr>
+				<td align="right">创建密码：</td>
+				<td><input type="password" name="password"/></td>
+			</tr>
+			<tr>
+				<td align="right">真实姓名：</td>
+				<td><input type="text" name="realname"/></td>
+			</tr>
+			<tr>
+				<td align="right">性别：</td>
+				<td><input type="radio" name="sex" value="male"/>男<input type="radio" name="sex" value="female"/>女</td>
+			</tr>
+			<tr>
+				<td align="right">生日：</td>
+				<td>
+					<select name="year">
+						<option value="1990">1990</option>
+						<option value="1991">1991</option>
+						<option value="1992">1992</option>
+						<option value="1993">1993</option>
+						<option value="1994">1994</option>
+						<option value="1995">1995</option>
+				    </select>年
+					<select name="month">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+				    </select>月
+					<select name="day">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+				    </select>日
+				</td>
+			</tr>
+			<tr>
+				<td align="right">我现在：</td>
+				<td>
+					<select name="action">
+						<option value="正在上学">正在上学</option>
+						<option value="已工作">已工作</option>
+						<option value="其他">其他</option>
+				    </select>
+				</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td><img src="verycode.gif"/><a href="#">看不清楚？换一张</a></td>
+			</tr>
+			<tr>
+				<td align="right">验证码：</td>
+				<td><input type="text" name="verifycode"/></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td><input type="image" src="btn_reg.gif"/></td>
+			</tr>
+		</table>
+	</form>
+ </body>
+</html>

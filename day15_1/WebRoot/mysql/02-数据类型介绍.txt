@@ -1,0 +1,11 @@
+数据类型
+  *int：整型
+  *double，浮点型，double(5, 2)表示最多5位，其中必须有两位小数，即最大值999.99
+  *decimal，浮点型，度量金钱时使用该类型，不会出现精度损失
+  *char，定长字符串，最长char(255)，不够补空格，超出报错
+  *varchar，变长字符串，最长varchar(65535)，
+  *text(clob)，字符大对象，分为四个类型
+  *blob，字节大对象，分为四个类型
+  *date，日期类型，yyyy-MM-dd
+  *time，时间类型，hh:mm:ss
+  *timestamp，时间戳类型，yyyy-MM-dd hh:mm:ss

@@ -1,0 +1,7 @@
+数据库
+  *查看所有数据库：show databases
+  *切换数据库：user database dbname
+  *创建数据库：create database [if not exsits] dbname [charset=utf8]
+  *删除数据库：drop database [if exsits] dbname
+  *修改数据库的编码：alter database dbname character set utf8
+  *注意数据库一旦创建，不能修改名称，要想修改，只能先删除数据库，在重新创建

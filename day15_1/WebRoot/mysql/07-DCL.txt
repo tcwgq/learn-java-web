@@ -1,0 +1,21 @@
+1.创建用户
+  *create user 用户名@ip地址 identified by 密码
+  >用户只能在指定的IP地址上登录
+  *create user 用户名@'%' identified by 密码
+  >用户可以在任意的IP地址上登录
+2.查看mysql中的所有用户
+  *select distinct concat('User: ''', user, '''@''', host, ''';') as users from mysql.user;distinct用于去除重复记录
+  >字符串中包含"`"，需要进行转译，就是"``"
+3.给用户授权
+  *grant 权限1，权限2，。。。，权限n on 数据库.* to 用户名@ip地址
+  >给用户在指定数据上分配指定权限
+  >权限可以是：create、alter、drop、insert、update、delete、select等权限
+  >如grant create、alter、drop、insert、update、delete、select on mydb3.* on user1@localhost
+  *grant all on 数据库.* to 用户名@ip地址
+  >给用户在指定数据上分配所有权限
+4.撤销授权
+  *revoke 权限1，权限2，。。。，权限n on 数据库.* from 用户名@ip地址
+5.查看指定用户拥有的权限
+  *show grants for 用户名@ip地址
+6.删除用户
+  *drop user 用户名@ip地址

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Middle</title>
+ </head>
+ <body>
+  <h1>这是middle页！</h1>
+  <input type="button" value = "previous" onclick = "previous();"/><br/>
+  <input type="button" value = "next" onclick = "next();"/><br/>
+  <a href = "tail.html">点我</a>
+  <script type="text/javascript">
+     function previous(){
+		 //history.back();
+		 history.go(-1);
+	 }
+	 function next(){
+		 //history.forward();
+		 history.go(1);
+	 }
+  </script>
+ </body>
+</html>

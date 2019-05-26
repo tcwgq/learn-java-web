@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+   <input type="button" value="点我" onclick="jump()"/><br/>
+   <script type="text/javascript">
+      //navigator获取客户机的信息（浏览器的信息）
+	  document.write(navigator.appName);
+	  document.write("<br/>");
+	  //screen获取屏幕的信息
+	  document.write(screen.width);
+	  document.write("<br/>");
+	  document.write(screen.height);
+	  document.write("<br/>");
+	  //location请求URL地址
+	  //获取请求的URL地址
+	  document.write(location.href);
+	  document.write("<br/>");
+	  //设置URL地址
+	 function jump(){
+		  //alert("Hello");
+		  location.href = "link.html";
+	  }
+   </script>
+ </body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+   <span id="spanid">谁明浪子心？</span><br/>
+ </body>
+ <script type="text/javascript">
+    var span = document.getElementById("spanid");
+	document.write(span.nodeName);
+	document.write("<br/>");
+	document.write(span.nodeType);
+	document.write("<br/>");
+	document.write(span.nodeValue);
+	document.write("<br/>");
+	var span1 = span.getAttributeNode("id");
+	document.write(span1.nodeName);
+	document.write("<br/>");
+	document.write(span1.nodeType);
+	document.write("<br/>");
+	document.write(span1.nodeValue);
+	document.write("<br/>");
+	var text = span.firstChild;
+	document.write(text.nodeName);
+	document.write("<br/>");
+	document.write(text.nodeType);
+	document.write("<br/>");
+	document.write(text.nodeValue);
+	document.write("<br/>");
+ </script>
+</html>

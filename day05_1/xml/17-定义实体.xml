@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE person [
+	<!ELEMENT person (name+, age?, sex, des*, birthday)>
+	<!ELEMENT name (#PCDATA)>
+	<!ATTLIST name
+		first (王|赵|李) #REQUIRED
+	>
+	<!ELEMENT age (#PCDATA)>
+	<!ATTLIST age
+		id ID #REQUIRED 
+	>
+	<!ELEMENT sex (#PCDATA)>
+	<!ATTLIST sex
+		choose CDATA #FIXED "male"
+	>
+	<!ELEMENT birthday (#PCDATA)>
+	<!ATTLIST birthday 
+		year CDATA #IMPLIED
+		month CDATA #REQUIRED
+		day CDATA #REQUIRED
+	>
+	<!ELEMENT des ANY>
+	<!ATTLIST des
+		information CDATA "THIS IS IMPORTANT!"
+	>
+	<!ENTITY TEST "Entity">
+]>
+<person>
+	<name first="王">&TEST;</name>
+	<age id="abc">27</age>
+	<sex choose="male">male</sex>
+	<des>hello</des>
+	<birthday year="1991" month="01" day="10"></birthday>
+</person>
+<!-- 
+属性值类型：
+CDATA:普通的文本字符串
+枚举:表示只能从给定范围内取值
+ID:表示属性的取值不能重复
+
+属性的约束：
+#REQURIED:表示该属性必须出现
+#IMPLIED:表示该属性可有可无
+#FIXED:表示属性的取值为一个固定值
+直接值:不写属性，属性默认为直接值，写属性，属性值为设定的值
+ -->

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <style type="text/css">
+    #div1{
+	   width:150px;
+	   height:250px;
+	   float:left;
+	}
+	#div2{
+	   width:150px;
+	   height:250px;
+	   float:left;
+	}
+  </style>
+  <title>Document</title>
+ </head>
+ <body>
+   <div id="div1">
+      <select multiple="multiple" id="sel1">
+	     <option>aaaaaaaaaa</option>
+		 <option>bbbbbbbbbb</option>
+		 <option>cccccccccc</option>
+		 <option>dddddddddd</option>
+	  </select>
+	  <input type="button" value="选择添加到右边" onclick="selToRight();"/>
+      <input type="button" value="全部添加到右边" onclick="allToRight();"/>
+   </div>
+    <div id="div2">
+      <select multiple="multiple" id="sel2" width="100px" weight="200px">
+	     <option>AAAAAAAAAA</option>
+		 <option>BBBBBBBBBB</option>
+		 <option>CCCCCCCCCC</option>
+		 <option>DDDDDDDDDD</option>
+	  </select>
+	  <input type="button" value="选择添加到左边" onclick="selToLeft();"/>
+      <input type="button" value="全部添加到左边" onclick="allToLeft();"/>
+   </div>
+ </body>
+ <script type="text/javascript">
+     function selToRight(){
+		var sel1 = document.getElementById("sel1");
+		var sel2 = document.getElementById("sel2");
+		var list = sel1.getElementsByTagName("option");
+		for(var i = 0; i < list.length; i++){
+			if(list[i].selected){
+				var clone = list[i].cloneNode(true);
+				sel2.appendChild(clone);
+			}
+		}
+	 }
+	 function allToRight(){
+		var sel1 = document.getElementById("sel1");
+		var sel2 = document.getElementById("sel2");
+		var list = sel1.getElementsByTagName("option");
+		for(var i = 0; i < list.length; i++){
+				var clone = list[i].cloneNode(true);
+				sel2.appendChild(clone);
+		}
+	 }
+	 function selToLeft(){
+		var sel1 = document.getElementById("sel1");
+		var sel2 = document.getElementById("sel2");
+		var list = sel2.getElementsByTagName("option");
+		for(var i = 0; i < list.length; i++){
+			if(list[i].selected){
+				sel1.appendChild(list[i]);
+				i--;
+			}
+		}
+	 }
+	 function allToLeft(){
+		var sel1 = document.getElementById("sel1");
+		var sel2 = document.getElementById("sel2");
+		var list = sel2.getElementsByTagName("option");
+		for(var i = 0; i < list.length; i++){
+				sel1.appendChild(list[i]);
+				i--;
+		}
+	 }
+ </script>
+</html>

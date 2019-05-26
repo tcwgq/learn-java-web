@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <script type="text/javascript">
+     var arr = [1, 2, 3];
+	 alert(arr);
+	 var arr1 = new Array(4);
+	 alert(arr1.length);
+	 var arr2 = new Array(3, 4, 5, 6, 7);
+	 alert(arr2);
+	 //concat() 方法用于连接两个或多个数组。
+	 var a = new Array(1, 2, 3);
+	 var b = new Array(8, 9, 0);
+	 alert(a.concat(b));
+	 //join() 方法用于把数组中的所有元素放入一个字符串。
+	 //元素是通过指定的分隔符进行分隔的。
+	 var c = new Array(3);
+	 c[0] = 'a';
+	 c[1] = 'b';
+	 c[2] = 'c';
+	 alert(c);
+	 alert(c.join("-"));
+	 //push() 方法可向数组的末尾添加一个或多个元素，并返回新的长度。
+	 var d = new Array(2);
+	 d[0] = 1;
+	 d[1] = 2;
+	 alert(d.push(3));
+	 alert(d);
+	 var e = ["aaa", "bbb", "ccc"];
+	 var f = ["qqq", "www", "eee"];
+	 alert(e.push(f));
+	 alert(e);
+	 //pop() 方法用于删除并返回数组的最后一个元素。
+	 var g = ["hello", "world", "haha"];
+	 alert(g.pop());
+	 alert(g);
+	 //reverse() 方法用于颠倒数组中元素的顺序。
+	 var h = [1, 2, 3, 4, 5];
+	 alert(h.reverse());
+  </script>
+ </body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <script type="text/javascript">
+      var str = "Hello";
+	document.write(str.concat("World"));
+	//字符串中第一个字符的下标是 0。如果参数 index 不在 0 与 string.length 之间，该方法将返回一个空字符串。
+	document.write("<hr/>");
+	document.write(str.charAt(0));
+	document.write("<hr/>");
+	document.write(str.charAt(50));
+	document.write("<hr/>");
+	document.write(str.charAt(-1));
+	document.write("<hr/>");
+	document.write(str.indexOf("llo"));
+	document.write("<hr/>");
+	document.write(str.indexOf("Hehe"));
+	document.write("<hr/>");
+	var str="How are you doing today?"
+    document.write(str.split(" ") + "<br />")
+    document.write(str.split("") + "<br />")
+    document.write(str.split(" ",3))
+	document.write("<hr/>");
+	var str="Visit Microsoft!"
+    document.write(str.replace("Microsoft", "W3School"));
+	document.write("<hr/>");
+	var str = "abcdefghijkl";
+	document.write(str.substr(0, 3));
+	document.write("<hr/>");
+	document.write(str.substring(0, 3));
+  </script>
+ </body>
+</html>

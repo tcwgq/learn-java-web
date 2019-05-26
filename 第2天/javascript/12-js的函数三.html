@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <script type="text/javascript">
+      //此种方式可以实现函数的动态创建
+      var sum = new Function("a, b", "var result = a + b; return result;");
+	  alert(sum(1, 2));
+  </script>
+ </body>
+</html>

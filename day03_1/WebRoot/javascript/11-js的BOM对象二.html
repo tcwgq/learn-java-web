@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <input type="button" value="点我" onclick="open1()"/><br/>
+  <input type="text" id="clock" size="35" /><br/>
+  <button onclick="int=window.clearInterval(int)">Stop interval</button><br/>
+  <button onclick="int=window.clearTimeout(int)">Stop timeout</button><br/>
+  <script type="text/javascript">
+     //window 窗体对象 顶层对象
+	 //方法
+	 //alert() 方法用于显示带有一条指定消息和一个 OK 按钮的警告框。
+	 //alert("Hello world");
+	 //confirm() 方法用于显示一个带有指定消息和 OK 及取消按钮的对话框。
+	 //var flag = window.confirm("确认删除");
+	 //document.write(flag);
+	 //document.write("<br/>");
+	 //prompt() 方法用于显示可提示用户进行输入的对话框。
+	 //var r = window.prompt("请输入内容：", "123");
+	 //document.write(r);
+	 //document.write("<br/>");
+	 //open() 方法用于打开一个新的浏览器窗口或查找一个已命名的窗口。
+	 function open1(){
+		 window.open("link.html", "", "width=400; height=300");
+	 }
+	 //close() 方法用于关闭浏览器窗口。
+	 //window.close();
+	 //setInterval() 方法可按照指定的周期（以毫秒计）来调用函数或计算表达式。
+	 /*
+	 var id = window.setInterval("alert('123')", 2000);
+	 document.write(id);
+	 */
+	 document.write("<br/>");
+     var int=self.setInterval("clock()",50)
+     function clock() {
+        var t=new Date();
+        document.getElementById("clock").value=t;
+	 }
+	 //setTimeout() 方法用于在指定的毫秒数后调用函数或计算表达式。
+	 var ID = window.setTimeout("alert('123')", 3000);
+	 document.write("<br/>");
+	 //clearInterval() 方法可取消由 setInterval() 设置的 timeout。
+	 //clearInterval() 方法的参数必须是由 setInterval() 返回的 ID 值。
+	 //clearTimeout() 方法可取消由 setTimeout() 方法设置的 timeout。
+  </script>
+ </body>
+</html>

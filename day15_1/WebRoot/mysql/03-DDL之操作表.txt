@@ -1,0 +1,17 @@
+表
+  *创建表
+  create table [if not exists] tb_name(
+	列名 列类型
+	列名 列类型
+	。。。
+	列名 列类型
+	);
+  *查看数据库中的所有表：show tables
+  *查看创建表的语句：show create table tb_name
+  *查看表结构：desc tb_name
+  *修改表：alter table tb_name
+  >添加列：alter table tb_name add (列名 列类型， 列名 列类型，。。。，列名 列类型)
+  >修改列类型：alter table tb_name modify 列名 列类型，如果原有列已有数据，则修改后可能影响原有数据
+  >修改列名称：alter table tb_name change 原列名 新列名 列类型，这个可以在修改列名的同时修改列的类型
+  >删除列：alter table tb_name drop 列名
+  >修改表名称：alter table old_name rename to new_name

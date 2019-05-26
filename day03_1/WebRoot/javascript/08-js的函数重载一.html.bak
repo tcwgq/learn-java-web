@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+   <script type="text/javascript">
+      function sum(a, b){
+		  document.write("length: " + arguments.length);
+		  document.write("<br/>");
+		  document.write("arguments = : " + arguments);
+		   document.write("<br/>");
+		  for(var i = 0; i < arguments.length; i++){
+			  document.write("value: " + arguments[i]);
+			  document.write("<br/>");
+		  }
+		  return a + b;
+	  }
+	  /*function sum(a, b, c){
+		  return a + b + c;
+	  }
+	  function sum(a, b, c, d){
+		  return a + b + c + d;
+	  }*/
+	  //就近原则调用函数
+	  document.write(sum(1, 2));//NaN
+	  document.write("<br/>")
+	  document.write(sum(1, 2, 3));//NaN
+	  document.write("<br/>");
+	  document.write(sum(1, 2, 3, 4));//10
+   </script>
+ </body>
+</html>

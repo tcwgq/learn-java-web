@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+   <input type="text" name="username" value="aaa" id="inputid" class="hehe"/><br/>
+ </body>
+ <script type="text/javascript">
+    var input1 = document.getElementById("inputid");
+	document.write(input1.value);
+	document.write("<br/>");
+	document.write(input1.getAttribute("value"));
+	document.write("<br/>");
+	document.write(input1.class);
+	document.write("<br/>");
+	document.write(input1.getAttribute("class"));
+	document.write("<br/>");
+	document.write(input1.getAttribute("name"));
+	document.write("<br/>");
+	input1.removeAttribute("name");
+	document.write(input1.getAttribute("name"));
+	document.write("<br/>");
+	//removeAttribute()不能删除value的值
+	input1.removeAttribute("value");
+	document.write(input1.getAttribute("value"));
+ </script>
+</html>

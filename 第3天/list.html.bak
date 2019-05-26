@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <table width="250" height="150" border="1" text-align="center">
+     <tr>
+	    <td>编号</td>
+		<td>姓名</td>
+		<td>操作</td>
+	 </tr>
+     <tr>
+	    <td>111</td>
+		<td>aaa</td>
+		<td><input type="button" value="选择" onclick="copy1('111', 'aaa');"/></td>
+	 </tr>
+	 <tr>
+	    <td>222</td>
+		<td>bbb</td>
+		<td><input type="button" value="选择" onclick="copy1('222', 'bbb');"/></td>
+	 </tr>
+	 <tr>
+	    <td>333</td>
+		<td>ccc</td>
+		<td><input type="button" value="选择" onclick="copy1('333', 'ccc');"/></td>
+	 </tr>
+	 <tr>
+	    <td>444</td>
+		<td>ddd</td>
+		<td><input type="button" value="选择" onclick="copy1('444', 'ddd');"/></td>
+	 </tr>
+	 <tr>
+	    <td>555</td>
+		<td>eee</td>
+		<td><input type="button" value="选择" onclick="copy1('555', 'eee');"/></td>
+	 </tr>
+  </table>
+ </body>
+ <script type="text/javascript">
+    function copy1(a, b){
+		var f = window.opener;
+		var number = f.document.getElementById("1");
+		var username = f.document.getElementById("2");
+		number.value = a;
+		username.value = b;
+		window.close();
+	}
+ </script>
+</html>

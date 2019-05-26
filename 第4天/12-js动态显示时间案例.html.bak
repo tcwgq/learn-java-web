@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <style type="text/css">
+    span{
+	   width:50px;
+	   height:25px;
+	   border: 1px solid red;
+	}
+  </style>
+  <title>Document</title>
+ </head>
+ <body>
+   <span id="sid"></span><br/>
+ </body>
+ <script type="text/javascript">
+   function getTime(){
+     var date = new Date();
+	 var str = date.toLocaleString();
+	 var span = document.getElementById("sid");
+	 span.innerHTML = str;
+   }
+ </script>
+</html>

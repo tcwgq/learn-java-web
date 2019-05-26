@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title> new document </title>
+  <meta name="generator" content="editplus" />
+  <meta name="author" content="" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+ </head>
+
+ <body>
+	<form action="01-hello.html" method="get">
+	<!--表单标签-->
+	<!--普通输入项-->
+	username:<input type="text" name="username"/><br/>
+	password:<input type="password" name="password"/><br/>
+	sex:<input type="radio" name="sex" value="male"/>male<input type="radio" name="sex" value="female" checked="checked"/>female<br/>
+	hobby:<input type="checkbox" name="hobby" value="sing" checked="checked">唱歌<input type="checkbox" name="hobby" value="dance">跳舞<input type="checkbox" name="hobby" value="ktv">KTV<br/>
+	file:<input type="file" name="filename"/><br/>
+	birthday:<select name="birthday">
+				<option value="1990">1990</option>
+				<option value="1991" selected="selected">1991</option>
+				<option value="1992">1992</option>
+				<option value="1993">1993</option>
+				<option value="1994">1994</option>
+				<option value="1995">1995</option>
+			 </select><br/>
+	self-desc:<textarea rows="5" cols="20" name="self-desc"></textarea><br/>
+	hidden:<input type="hidden" name="hidden" value="这是隐藏的内容"/>
+	<input type="submit" value="提交" />
+	<input type="reset" value="重置"/>
+	<input type="button" value="普通按钮"/><br/>
+	<input type="image" src="tomcat.gif"/><br/>
+	</form>
+ </body>
+</html>

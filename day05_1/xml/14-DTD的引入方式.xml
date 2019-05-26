@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 第一种方式，引入本地的dtd文件 -->
+<!DOCTYPE person SYSTEM "14.dtd">
+<!-- 第二种方式，直接在页面中定义约束 -->
+<!DOCTYPE person [
+	<!ELEMENT person (name, age)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT age (#PCDATA)>
+]>
+<!-- 第三种方式，引入网络上的dtd文件 -->
+<!DOCTYPE struts PUBLIC "dtd名称" "dtd的URL">
+<person>
+	<name>zhangSan</name>
+	<age>27</age>
+	<sex>male</sex>
+</person>

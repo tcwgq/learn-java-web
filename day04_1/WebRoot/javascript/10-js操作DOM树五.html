@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <style type="text/css">
+    #div1{
+		width:250px;
+		height:150px;
+		border:1px solid black;
+	}
+	 #div2{
+		width:250px;
+		height:auto;
+		border:1px solid black;
+	}
+  </style>
+  <title>Document</title>
+ </head>
+ <body>
+   <div id="div1">
+	<ul id="uuid">
+	   <li id="111">aaa</li>
+	   <li id="222">bbb</li>
+	   <li id="333">ccc</li>
+	</ul>
+   </div>
+   <div id="div2">
+   </div>
+	<input type="button" value="点我" onclick="clone1();"/>
+ </body>
+ <script type="text/javascript">
+    function clone1(){
+		var ul = document.getElementById("uuid");
+		var copyul = ul.cloneNode(true);
+		var div2 = document.getElementById("div2");
+		div2.appendChild(copyul);
+	}
+ </script>
+</html>

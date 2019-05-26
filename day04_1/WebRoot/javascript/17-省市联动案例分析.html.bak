@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <style type="text/css">
+    #div1{
+	   width:150px;
+	   height:250px;
+	   float:left;
+	}
+  </style>
+  <title>Document</title>
+ </head>
+ <body>
+   <div id="div1">
+      <select id="country" onchange="change(this.value);">
+	     <option>请选择</option>
+		 <option>中国</option>
+		 <option>日本</option>
+		 <option>美国</option>
+		 <option>俄罗斯</option>
+	  </select>
+	  <select id="city">
+		
+	  </select>
+   </div>
+ </body>
+ <script type="text/javascript">
+	var array = new Array(4);
+	array[0]=["中国", "北京", "上海", "广州", "深圳"];
+	array[1]=["日本", "东京", "广岛", "长崎"];
+	array[2]=["美国", "华盛顿", "纽约", "洛杉矶"];
+	array[3]=["俄罗斯", "莫斯科", "斯大林格勒", "海参崴"];
+	function change(value){
+		var sel2 = document.getElementById("city");
+		var options = sel2.getElementsByTagName("option");
+		for(var i = 0; i < options.length; i++){
+			sel2.removeChild(options[i]);
+		}
+
+		for(var i = 0; i < array.length; i++){
+			var arr = array[i];
+			var country = arr[0];
+			if(country == value){
+				for(var j=1; j < arr.length; j++){
+					
+					var option = document.createElement("option");
+					var text = document.createTextNode(arr[j]);
+					option.appendChild(text);
+					sel2.appendChild(option);
+				}
+			}
+		}
+	}
+ </script>
+</html>

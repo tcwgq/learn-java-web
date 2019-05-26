@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <style type="text/css">
+    div{
+	   width:125px;
+	   height:125px;
+	   border: 1px solid black;
+	}
+  </style>
+  <title>Document</title>
+ </head>
+ <body>
+   <div>
+      <input type="checkbox" id="check" onclick="sel();"/>全选/全不选<br/>
+	  <input type="checkbox" name="love"/>唱歌<br/>
+	  <input type="checkbox" name="love"/>跳舞<br/>
+	  <input type="checkbox" name="love"/>旅游<br/>
+	  <input type="checkbox" name="love"/>摄影<br/>
+   </div>
+   <input type="button" value="全选" id="111" onclick="selectAll();"/>
+   <input type="button" value="全不选" id="222" onclick="selectNone();"/>
+   <input type="button" value="反选" id="333" onclick="selectOpp();"/>
+ </body>
+ <script type="text/javascript">
+    function sel(){
+		var check = document.getElementById("check");
+		if(check.checked == true){
+			selectAll();
+		}else{
+			selectNone();
+		}
+
+	}
+	function selectAll(){
+		var options = document.getElementsByName("love");
+		for(var i=0; i < options.length; i++){
+			options[i].checked = true;
+		}
+	}
+	function selectNone(){
+		var options = document.getElementsByName("love");
+		for(var i=0; i < options.length; i++){
+			options[i].checked = false;
+		}
+	}
+	function selectOpp(){
+		var options = document.getElementsByName("love");
+		for(var i=0; i < options.length; i++){
+			if(options[i].checked == true){
+				options[i].checked = false;
+			}else{
+				options[i].checked = true;
+			}
+		}
+	}
+ </script>
+</html>

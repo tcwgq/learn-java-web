@@ -1,0 +1,5 @@
+https://www.yeepay.com/app-merchant-proxy/node?
+p0_Cmd=Buy&p1_MerId=10001126856&p2_Order=111098BB1CBF4F23A9897FFFA526D32B&p3_Amt=0.01&p4_Cur=CNY&p5_Pid=&p6_Pcat=&p7_Pdesc=
+&p8_Url=http://localhost:8080/bookstore/OrderServlet?method=back&p9_SAF=0&pa_MP=&pd_FrpId=ABC-NET-B2C&pr_NeedResponse=1&hmac=35af1b3dd762d23c6918d1f29dea38ce
+ 
+  

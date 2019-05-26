@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema" xmlns="http://www.w3school.com.cn"
+	targetNamespace="http://www.tcwgq.com/20160325" elementFormDefault="qualified">
+	<xs:element name="people">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="person" minOccurs="0" maxOccurs="unbounded"></xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="person">
+		<xs:complexType>
+			<!-- <xs:sequence> -->
+			<xs:all>
+				<xs:element name="name" type="xs:string"></xs:element>
+				<xs:element name="age" type="xs:int"></xs:element>
+			</xs:all>
+			<!-- </xs:sequence> -->
+		</xs:complexType>
+	</xs:element>
+
+
+</xs:schema>
+<!-- 
+	sequence:表示元素出现的顺序。 
+	all:表示元素只能出现一次。 
+	choice:表示只能出现其中的一个。
+	minOccurs:元素最小的出现次数。
+	maxOccurs:元素最大的出现次数。
+	any:表示任意元素。
+	attribute:用来定义复杂元素的属性。
+-->

@@ -1,0 +1,12 @@
+delete语句：delete from tb_name where condition
+  *where子句介绍
+  >条件必须是一个boolean类型的值或表达式：UPDATE t_person SET gender='男', age=age+1 WHERE sid='1';
+  > 运算符：=、!=、<>(不等于，和!=用法相同)、>、<、>=、<=、BETWEEN...AND、IN(...)、IS NULL、NOT、OR、AND
+  >where age = 12;
+  >where age != 12;
+  >where age between 20 and 30
+  >where name='zhangsan' or 'lisi'
+  >where name in ('zhangsan', 'lisi')
+  >where name not in ('zhangsan', 'lisi')
+  >where age >= 20 and age <= 30
+  >where name is null，属性值为null时，不能使用=，必须使用is null

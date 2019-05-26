@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<person>
+  <![CDATA[<b>if(a < b && a > c){a = a + 10}</b>]]>
+</person>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+   <input type="text" name="username" value="aaa" id="1"><br/>
+   <input type="text" name="username" value="bbb" id="2"><br/>
+   <input type="text" name="username" value="ccc" id="3"><br/>
+   <input type="text" name="username" value="ddd" id="4"><br/>
+ </body>
+ <script type="text/javascript">
+    var arr = document.getElementsByTagName("input");
+	document.write(arr.length);
+	document.write("<hr/>");
+	for(var i = 0; i < arr.length; i++){
+		document.write(arr[i] + "--" + arr[i].value);
+		document.write("<hr/>");
+	}
+ </script>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<class>
+	<student>
+		<id>111</id>
+		<name>张三</name>
+		<age>30</age>
+	</student>
+	<student>
+		<id>222</id>
+		<name>李四</name>
+		<age>40</age>
+	</student>
+	<student>
+		<id>333</id>
+		<name>王五</name>
+		<age>50</age>
+	</student>
+	<student>
+		<id>666</id>
+		<name>赵六</name>
+		<age>60</age>
+	</student>
+</class>

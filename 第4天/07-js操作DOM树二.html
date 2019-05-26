@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <style type="text/css">
+    div{
+		width:250px;
+		height:150px;
+		border:1px solid black;
+	}
+  </style>
+  <title>Document</title>
+ </head>
+ <body>
+   <div>
+	<ul id="uuid">
+	   <li id="111">aaa</li>
+	   <li id="222">bbb</li>
+	   <li id="333">ccc</li>
+	</ul>
+   </div>
+	<input type="button" value="点我" onclick="insert1();"/>
+ </body>
+ <script type="text/javascript">
+    function insert1(){
+		var li2 = document.getElementById("222");
+		var li = document.createElement("li");
+		var text = document.createTextNode("ddd");
+		li.appendChild(text);
+		var ul = document.getElementById("uuid");
+		ul.insertBefore(li, li2);
+	}
+ </script>
+</html>

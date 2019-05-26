@@ -1,0 +1,6 @@
+INSERT语句：insert into tb_name (c_name1, c_name2, ..., c_namen) values (value1, value2, ..., valuen)
+注意：
+  *后面括号中的值类型顺序要与前面括号中的列类型顺序一致
+  *可以指定部分列，此时其他列的值为null
+  *没有指定列时，表示插入所有列，此时值的类型要与表中列的类型次序保持一致
+  *字符串类型使用''，日期类型也是用''

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="gbk" ?>
+<person>
+   <name>zhangSan</name>
+   <age>27</age>
+   <string>a &at;b</string>
+</person>

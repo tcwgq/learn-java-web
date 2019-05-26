@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="gbk" ?>
+# 文档声明必须写在文件的第一行第一列
+<person>
+   <name>zhangSan</name>
+   <age>24</age>
+</person>

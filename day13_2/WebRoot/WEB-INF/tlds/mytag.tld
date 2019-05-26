@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+	version="2.1">
+	<description>My own tag library</description>
+	<display-name>MyTag</display-name>
+	<tlib-version>1.0</tlib-version>
+	<short-name>my</short-name>
+	<uri>http://www.tcwgq.com/jsp/tags</uri>
+	<tag>
+		<description>This is my first tag!</description>
+		<name>myTag1</name>
+		<tag-class>com.tcwgq.tag.MyTag1</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+	<tag>
+		<description>This is my second tag!</description>
+		<name>myTag2</name>
+		<tag-class>com.tcwgq.tag.MyTag2</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+	<tag>
+		<description>This is my third tag!</description>
+		<name>myTag3</name>
+		<tag-class>com.tcwgq.tag.MyTag3</tag-class>
+		<body-content>scriptless</body-content>
+	</tag>
+	<tag>
+		<description>This is my forth tag!</description>
+		<name>myTag4</name>
+		<tag-class>com.tcwgq.tag.MyTag4</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+	<tag>
+		<description>This is my fifth tag!</description>
+		<name>myTag5</name>
+		<tag-class>com.tcwgq.tag.MyTag5</tag-class>
+		<body-content>scriptless</body-content>
+		<attribute>
+			<name>test</name>
+			<!-- 表示属性是否为必须 -->
+			<required>true</required>
+			<!-- 表示属性是否能为EL表达式 -->
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>

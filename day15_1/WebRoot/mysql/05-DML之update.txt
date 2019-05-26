@@ -1,0 +1,12 @@
+update语句：update t_name set c_name = c_value, c_name = c_value, ...., c_name = c_value where condition
+  *where子句介绍
+  >条件必须是一个boolean类型的值或表达式：UPDATE t_person SET gender='男', age=age+1 WHERE sid='1';
+  > 运算符：=、!=、<>(不等于，和!=用法相同)、>、<、>=、<=、BETWEEN...AND、IN(...)、IS NULL、NOT、OR、AND
+  >update student set name = 'helloworld' where age = 12;
+  >update student set name = 'helloworld' where age != 12;
+  >update student set name = 'helloworld' where age between 20 and 30
+  >update student set age = 15 where name='zhangsan' or 'lisi'
+  >update student set name = 'helloworld' where name in ('zhangsan', 'lisi')
+  >update student set name = 'helloworld' where name not in ('zhangsan', 'lisi')
+  >update student set name = 'helloworld' where age >= 20 and age <= 30
+  >update student set name = 'helloworld' where name is null，属性值为null时，不能使用=，必须使用is null

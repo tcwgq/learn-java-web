@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE person [
+	<!ELEMENT person (name+, age?, sex, des*)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT age (#PCDATA)>
+	<!ELEMENT sex EMPTY>
+	<!ELEMENT des ANY>
+]>
+<person>
+	<name>aaa</name>
+	<name>bbb</name>
+	<age>27</age>
+	<sex></sex>
+	<des>hello</des>
+	<des>world</des>
+</person>
+<!-- 
+ +代表出现一次或者多次
+ ?代表出现0次或者一次
+ *代表出现0次或者多次
+ ,代表元素出现的顺序
+ |代表只能出现某一元素
+ -->

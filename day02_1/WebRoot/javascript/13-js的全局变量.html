@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <script type="text/javascript">
+     var a = 100;
+	 alert("在函数外部调用a: "+a);
+	 var show = function(){
+		 alert("在函数内部调用a: " +a);
+	 }
+	 show();
+  </script>
+  <script type="text/javascript">
+     alert("在另外一个script代码块中调用a: "+a);
+  </script>
+ </body>
+</html>

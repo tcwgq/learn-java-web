@@ -1,0 +1,10 @@
+1.在Windows控制台下
+  *启动MySQL服务 net start mysql
+  *关闭MySQL服务 net stop mysql
+  *登录msyql
+  *msyql -u用户名 -p密码 -hIP地址
+  *如
+  *mysql -uroot -p112113 -hlocalhost
+  *mysql -uzhangSan -p123 -h192.168.32.78
+
+2.在MySQL控制台下退出 exit或者quit

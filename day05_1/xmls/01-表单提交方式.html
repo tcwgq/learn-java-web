@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+   <form action="form.html" id="form">
+	 <input type="text" name="username"/></br>
+	 <h4>方式一：使用submit标签提交</h4>
+	 <input type="submit" value="提交"/></br>
+	 <h4>方式二：使用button标签提交</h4>
+	 <input type="button" value="提交" onclick="sub();"/><br/>
+	 <h4>方式三：使用超链接标签提交</h4>
+	 <a href="form.html?username=123456">超链接</a><br/>
+	 <input type="text" name="password" value="please input" id="input1" onfocus="get();" onblur="lose();"/>
+   </form>
+ </body>
+ <script type="text/javascript">
+	function sub(){
+		var form = document.getElementById("form");
+		form.action = "form.html";
+		form.submit();
+	}
+	function get(){
+		var input1 = document.getElementById("input1");
+		input1.value = "";
+	}
+	function lose(){
+		var input1 = document.getElementById("input1");
+		input1.value = "please input";
+	}
+ </script>
+</html>

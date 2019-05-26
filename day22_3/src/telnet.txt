@@ -1,0 +1,21 @@
+telnet发邮件
+连接163的smtp服务器：telnet smtp.163.com 25
+连接成功后需要如下步骤才能发送邮件：
+1	与服务器打招呼：ehlo你的名字
+2	发出登录请求：auth login
+3	输入加密后的邮箱名：(itcwgq@163.com)aXRjd2dxQDE2My5jb20=
+4	输入加密后的邮箱密码：(密码)d2dxNjgxMzIzNjY4
+5	输入谁来发送邮件，即from：mail from:<itcwgq@163.com>
+6	输入把邮件发给谁，即to：rcpt to:<770100361@qq.com>
+7	发送填写数据请求：data
+8	开始输入数据，数据包含：from、to、subject，以及邮件内容，如果输入结束后，以一个"."为一行，表示输入结束：
+	from:<itcwgq@163.com>
+	to:<770100361@qq.com>
+	subject: 我爱上你了
+
+	我已经深深的爱上你了，我是张柏芝。
+	.
+	注意，在标题和邮件正文之间要有一个空行！当要退出时，一定要以一个"."为单行，表示输入结束。
+9　最后一步：quit 
+ 
+

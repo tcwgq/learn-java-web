@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <style type="text/css">
+     #div1{
+	   width:250px;
+	   height:150px;
+	   border:1px solid green;
+	 }
+	 #div2{
+	   width:250px;
+	   height:150px;
+	   border:1px solid red;
+	 }
+  </style>
+  <title>Document</title>
+ </head>
+ <body>
+  <div id="div1">
+     <ul id="uuid">
+	   <li>aaa</li>
+	   <li>bbb</li>
+	   <li>ccc</li>
+	 </ul>
+  </div>
+  <div id="div2">
+  </div>
+  <input type="button" value="点我" onclick="add1();"/>
+ </body>
+ <script type="text/javascript">
+    function add1(){
+		
+	}
+ </script>
+</html>

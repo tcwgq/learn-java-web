@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+    <script type="text/javascript">
+	    var js = "alert('Hello world')";
+		//alert(js);
+		//eval()执行js字符串
+		//eval(js);
+		//encodeURI和decodeURI，分别对字符进行编码和解码
+		var str = "我爱你aaaa123!#$&";
+		//编码
+		var encode = encodeURI(str);
+		document.write(encode);
+		document.write("<br/>");
+		//解码
+		var decode = decodeURI(encode);
+		document.write(decode);
+		//encodeURIComponent和decodeURIComponent用法类似
+		//isNaN()判断当前字符串是否为数字
+		document.write("<br/>");
+		var num = 123;
+		document.write(isNaN(num));
+		document.write("<br/>");
+		document.write(isNaN("hello"));
+		document.write("<br/>");
+		//parseInt类型转换
+		var num1 = "123";
+		document.write(num1 + 1);
+
+	</script>
+ </body>
+</html>
